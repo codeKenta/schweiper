@@ -1,12 +1,21 @@
-import React from 'react';
-import { ThemeProvider } from 'theme-ui';
+/** @jsxRuntime classic */
+/** @jsx jsx */
+
+import { jsx, ThemeProvider } from 'theme-ui';
 
 import theme from '../../styles/theme';
+import Page from '../Page';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App" />
+      <div
+        sx={{
+          padding: '50px 20px',
+        }}
+      >
+        <Page />
+      </div>
     </ThemeProvider>
   );
 }
