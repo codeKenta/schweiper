@@ -1,2 +1,2 @@
-# schwiper
+# Schweiper
 React swiper component
